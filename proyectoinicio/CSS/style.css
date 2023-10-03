@@ -1,3 +1,11 @@
+:root{
+    --colorPrincipal: #F76666;
+    --colorSecundario: #02052F;
+    --fuentePrincipal: 'Open Sans', sans-serif;
+    --fuenteBotone: 
+}
+
+
 html
     {
     font-size: 62,5%;
@@ -6,8 +14,546 @@ html
 body
     {
     font-size: 16px;
+    /* background-color: var(--colorPrincipal) */
+    font-family: var(--fuentePrincipal);
     } 
     /*ESTO ES PARA CONSEGUIR TRABAJAR SOBRE 10px = 1REM*/
+
+
+
+
+
+
+    /* ESTILO GENÉRICOS */
+
+    .contenedor{ 
+        max-width: 75%;
+        margin-top: 0;
+        margin-right: auto;
+        margin-bottom: 0;
+        margin-left: auto;
+
+        margin: 0 auto 0 auto;
+        
+        margin: 0 auto;
+        /* ESTO SON 3 FORMAS DE PONER MARGENES A TODA LA PÁGINA */
+    }
+    
+
+    /* ESTILOS PARA EL MAIN */
+    .fondoMain{
+        background-image: url(../img/11641893944_banner_zona_centro.png);
+        background-size: cover;
+        background-position: top left;
+        padding: 40px 0 140px 0;
+    }
+    .margenDerecho{
+        margin-right: 35%;
+    }
+    h1{
+        background: rgba(248, 102, 102, 0.65);
+        margin-bottom: 10px;
+        display: block;
+        font-weight: 800;
+        padding: 35px;
+        color: white;
+        font-size: 2.90rem;
+        font-family: 'Open Sans', sans-serif;
+        line-height: 1.2;
+        margin-top: 0;
+        box-sizing: border-box;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+    .fondoMain a{
+        background-color: black;
+        color: white;
+        border: 2px solid black;
+        padding: 25px 90px 25px 90px;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: right;
+        font-weight: 700;
+        font-size: 1rem;
+
+    }
+    .flexMain{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+
+    /* ESTILOS PARA LA IMGEN DE CORPORACIONES */
+    .imagenesOficiales{
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+        align-items: center;
+        padding: 30px;
+        margin-top: -60px;
+        border-radius: 12px;
+    }
+    .logosOficiales{
+        background-color: white;
+        margin-top: -5px;
+        padding: 40px;
+    }
+
+
+    /* ESTILOS SECCION CURSOS */
+    .seccionCursos h3{
+        color: #F76666;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: var(--fuentePrincipal);
+        margin: 40px 0px;
+    }
+    .seccionCursos>h2{
+        color: #02052F;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 40px;
+    }
+    .botonesCursos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 80px;
+        margin-top: 70px;
+    }
+    .botonvertodo{
+        background-color: var(--colorPrincipal);
+        color: white;
+        font-family: var(--fuentePrincipal);
+        font-size: 0.95rem;
+        padding: 9px 22px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 700;
+        margin-right: 0.5rem;
+        border: 1px solid var(--colorPrincipal);
+    }
+    .botonmadrid{
+        background-color: white;
+        color: var(--colorPrincipal);
+        font-family: var(--fuentePrincipal);
+        font-size: 0.95rem;
+        padding: 9px 22px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 700;
+        margin-right: 0.5rem;
+        border: 1px solid var(--colorPrincipal);
+    }
+    .inscripcionCursos{
+        margin-bottom: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+   .inscripcionCursos>div{
+        max-width: 50%;
+        flex: 2;
+        padding: 40px 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 300px;
+
+   }
+   .marketing{
+        background-image:url(../img/Curso-marketing-digital-centro.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+        margin-right: 10px;
+    }
+   .webfull{
+        background-image: url(../img/Curso-programacion-web-full-stack-centro.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+        margin-left: 10px;
+   }
+    .inscripcionCursos div h2{
+        color: white;
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin bottom: 22px;
+    }
+    .inscripcionCursos a{
+        color: var(--colorPrincipal);
+        font-size: 1.2rem;
+        background-color: white;
+        border: 26px solid white;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    /* ESTILO SECCIÓN PIDENOSLO */
+    .interes{
+        margin-bottom: 1200px;
+        color: #F76666;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: var(--fuentePrincipal);
+        margin: 40px 0px;
+    }
+    .teInteresa{
+        color: var(--colorSecundario);
+        text-align: center;
+        text-transform: uppercase;
+        font-family: var(--fuentePrincipal);
+        margin: 40px 0px;
+        font-weight: 800;
+    }
+    .pidenoslo{
+        display: inline-block;
+        background-color: var(--colorPrincipal);
+        color: white;
+        font-family: var(--fuentePrincipal);
+        font-size: 0.95rem;
+        padding: 15px 34px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 700;
+        margin-right: 0.5rem;
+        border: 1px solid var(--colorPrincipal);
+        border-radius: 40px;
+        margin-bottom: 100px;
+    }
+    .pidenoslo :hover{
+        background-color: var(--colorSecundario);
+        text-decoration: underline;
+    }
+    /* ESTILO SECCION VIDEO  */
+    .video{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .tamañovideo{
+        width: 1100px;
+        height: 575px;
+        margin-bottom: 20px;
+    }
+
+
+    /* ESTILO SECCION PARA QUIEN SON ESTOS CURSOS */
+    .dirigido{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 80px;
+        margin-top: 40px;
+    }
+    .dirigido div{
+        flex-wrap: wrap;
+    }
+    .texto1dirigido{
+        max-width: 50%;
+        margin-right: 15px;
+
+    }
+    .paraquien{
+        max-width: 50%;
+        color: var(--colorPrincipal);
+        font-family: var(--fuentePrincipal);
+        font-weight: 800;
+        font-size: 1rem;
+        text-transform: uppercase;
+
+    }
+    .siquieres{
+        font-family: var(--fuentePrincipal);
+        font-weight: 800;
+        font-size: 1.7rem;
+        padding-right: 15px;
+    }
+    .cuandoeliges{
+        font-family: var(--fuentePrincipal);
+        font-size: 0.9rem;
+        font-weight: 400;
+        line-height: 1.4;
+    }
+    .cuandoeliges span{
+        font-weight: 800;
+    }
+    .paraparticipar{
+        font-family:var(--fuentePrincipal);
+        color: var(--colorSecundario);
+        font-weight: 800;
+        font-size: 0.95rem;
+        text-transform: uppercase;
+        line height: 1.8;
+        }
+    .texto1dirigido a{
+        color: var(--colorPrincipal);
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 0.95rem;
+        margin-bottom: 160px;
+    }
+    .descargate{
+        font-family: var(--fuentePrincipal);
+        font-weight: 800;
+        font-size: 0.9rem;
+        margin-bottom: 40px;
+    }
+    .texto1dirigido .descargainfo{
+        background-color: var(--colorPrincipal);
+        color: white;
+        text-decoration: none;
+        padding: 22px 22px;
+        margin-top: 20px;
+        font-weight: 700;
+    }
+    .texto2dirigido{
+        background-color: var(--colorPrincipal);
+        margin-left: 30px;
+        padding: 10px 25px;
+        margin-top: 50px;
+    }
+    .texto2dirigido h2{
+        margin-top: 40px;
+        color: white;
+        font-weight: 700;
+        line-height: 1;
+        font-size: 1.5rem;
+    }
+    .boxrojo{
+        display: flex;
+        flex-direction: block;
+        justify-content: flex-start;
+        align-items: center;
+
+    }
+
+    .texto2dirigido2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 30px;
+        padding-bottom: 20px;
+        margin-top: -50px;
+        align-items: center;
+        margin-right: 30px;
+    }
+    .texto2dirigido2 h4{
+        background-color: var(--colorSecundario);
+        color: white;
+        text-transform: uppercase;
+        width: 40%;
+        text-align: left;
+        padding: 40px;
+    }
+    .texto2dirigido2 h4 span{
+        color: var(--colorPrincipal);
+    }
+    .texto2dirigido2 img{
+        height: 50px;
+        width: 50px;
+    }
+
+
+
+
+
+
+    
+
+    /* ESTILOS LOCALIZACIONES */
+    .localizaciones{
+        background-color: #02052F;
+        color: white;
+
+    }
+    .contenedorlocalizaciones{ 
+        max-width: 75%;
+        margin-top: 80px;
+        margin-right: auto;
+        margin-bottom: 0;
+        margin-left: auto;
+        padding: 55px 0px;
+        display: flex;
+    }
+    .contenedorlocalizaciones h2{
+        text-transform: uppercase;
+        color: white;
+        font-size: 1.8rem;
+        margin: 50px 0px;
+    }
+    .localizaciones .contenedorlocalizaciones div{
+
+    }
+    
+    /* ESTILOS CONTACTAR */
+    .Contactar{
+        background-color: var(--colorPrincipal);
+    }
+    .Contactar .contenedor{
+        padding: 70px;
+    }
+    .Contactar .contenedor>h3{
+        color: white;
+        text-transform: uppercase;
+        font-size: 17px;
+        font-weight: 300;
+        font-family: var(--fuentePrincipal);
+        margin-bottom: 22px;
+    }
+    .Contactar .contenedor>h2{
+        color: white;
+        font-weight: 700;
+        margin-bottom: 50px;
+        text-transform: uppercase;
+    }
+    .ContactarCuadros{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .ContactarCuadros div{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .llamada div{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-transform: uppercase;
+        margin-left: 10px;
+    }
+    .correo div{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-transform: uppercase;
+        margin-left: 10px;
+    }
+    .llamada{
+        background-color: white;
+        margin-right: 30px;
+        padding: 28px;
+        width: 50%;
+        border-radius: 0.4rem;
+       
+    }
+    .correo{
+        background-color: white;
+        padding: 30px;
+        width: 50%;
+        border-radius: 0.4rem;
+    }
+    .correo div a{
+        color:var(--colorPrincipal);
+        font-weight: 700;
+        text-transform: lowercase;
+    }
+    .llamada div a{
+        color:var(--colorPrincipal);
+        font-weight: 700;
+    }
+
+
+    /* ESTILOS FOOTER  */
+    .seccionfooter{
+        display: flex;
+        flex-direction: column;
+        margin top: 40px;
+    }
+    .enlacesFooter {
+        margin: 40px 0px;
+        padding-top: 30px;
+        font-size: 20px;
+        color: var(--colorSecundario);
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+    .enlacesFooter a{
+        margin-right: 60px;
+    }
+    .paginaslegales{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 30px 0px;
+        border-top:1px solid var(--colorSecundario);
+        border-bottom: 1px solid var(--colorSecundario);
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .paginaslegales a{
+        margin-right: 40px;
+    }
+    /* ESTILO HEADER */
+    .seccionheader{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .iniciosesion{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .iniciosesion a{
+        margin-right: 20px;
+        color: var(--colorPrincipal);
+        text-decoration: none;
+    }
+    .loginalumno{
+        border-right: 1px solid var(--colorPrincipal);
+        padding-right: 10px;
+    }
+    .navegador{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+        
+    }
+    .tresenlaces{
+        color: black;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .tresenlaces a{
+        margin-right: 30px;
+        text-decoration: none;
+    }
+    .botoninformate{
+        background-color: var(--colorPrincipal);
+        padding: 10px 14px;
+        color: white;
+        border-radius: 1.4rem;
+    }
+
+    .tresenlaces a:hover{
+        text-decoration: underline;
+
+    }
+    .botoninformate:hover{
+        text-decoration: none !important;
+        background-color: var(--colorSecundario);
+    }
+
+
+
+
+
+
+
+
  /* h1 {
     color:red;
     background-color: yellow;
@@ -66,7 +612,7 @@ h6{
     text-transform: uppercase;
     font-size: 2rem; 
 } */
-h1{
+/* h1{
     background: rgba(248, 102, 102, 0.65);
     margin-bottom: 10px;
     display: block;
@@ -81,7 +627,13 @@ h1{
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
     margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-inline-end: 0px; */
+/* } */
 
-    
-}
+
+
+
+
+
+
+

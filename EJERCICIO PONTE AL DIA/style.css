@@ -1,0 +1,97 @@
+
+
+/* EJERCICIO CADENA DESCENDENTE Y TODOS LOS HIJOS */
+
+.selectorCadenaDescendente h2{
+    color: blue;
+    height: 100px;
+}
+.selectorTodosLosHijos>div>h2{
+    color: red;
+    height: 100px;
+}
+
+/* EJERCICIO DIFERENCIA ENTRE PADDING Y MARGIN */
+
+.paddingMargin1{
+    background-color: yellow;
+    height: 200px;
+    margin: 50px;
+}
+.paddingMargin2{
+    background-color: yellow;
+    height: 200px;
+    padding: 50px;
+}
+
+/* EJERCICIO DISPLAY BLOCK E INLINE */
+
+.seccionDisplays1 p{
+    background-color: aqua;
+}
+.seccionDisplays1 a{
+    background-color: red;
+}
+.seccionDisplays1 h1{
+    background-color: yellowgreen;
+
+}
+.seccionDisplays1 h3{
+    background-color: blueviolet;
+}
+.seccionDisplays1 h6{
+    background-color: tomato;
+}
+.seccionDisplays1 div p{
+    background-color: wheat;
+}
+
+
+
+.seccionDisplays2 p{
+    background-color: aqua;
+    display: inline;
+}
+.seccionDisplays2 a{
+    background-color: red;
+    display: block;
+}
+.seccionDisplays2 h1{
+    background-color: yellowgreen;
+    display: inline;
+}
+.seccionDisplays2 h3{
+    background-color: blueviolet;
+    display: inline;
+}
+.seccionDisplays2 h6{
+    background-color: tomato;
+    display: inline;
+}
+.seccionDisplays2 div{
+    background-color: wheat;
+    display: inline;
+}
+
+
+/* EJERCICIO DISPLAY FLEX */
+.seccionFlex{
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: end;
+}
+
+.seccionFlex2{
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: end;
+}
+
