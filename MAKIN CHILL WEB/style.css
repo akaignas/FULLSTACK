@@ -1,0 +1,180 @@
+
+/* WEB DE MAKINCHILL.COM */
+
+/* RUTAS */
+
+:root{
+    --colorPrincipal: #E0BA00;
+    --colorSecundario: #35009D;
+    --fuentePrincipal: 'Montserrat', sans-serif;
+}
+
+html
+    {
+    font-size: 62,5%;
+    }
+
+body{
+    font-size: 16px;
+    font-family: var(--fuentePrincipal);
+    }
+
+/* ESTILOS GENÉRICOS PARA TODA LA PÁGINA */
+
+.contenedor{
+    max-width: 80%;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+}
+
+body{
+    background-color: black;
+}
+
+/* ESTILOS HEADER PÁGINA DE INICIO */
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-right: 100px;
+    margin-left: 100px; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.logomkc{
+    height: 80px;
+    width: 80px;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family:var(--fuentePrincipal);
+}
+.menu a:hover{
+    color: var(--colorPrincipal);
+    zoom: 140%;
+    font-weight: 800;
+}
+
+/* ESTILOS PARA EL MAIN */
+
+.fondomkc{
+    height: 80vh;
+    background-image:url(./src/fondo_mkc.png);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+}
+
+/* ESTILOS PARA LA SECCION "BIENVENIDO" */
+
+.bienvenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.bienvenidoTexto1{
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: var(--fuentePrincipal);
+    margin-bottom: 0px;
+}
+.bienvenido img{
+    width: 40%;
+    margin-bottom: 0px;
+}
+.bienvenido p{
+    color: white;
+    text-align: justify;
+    margin-top: 0px;
+    font-size: 20px;
+}
+.bienvenido h2{
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: var(--fuentePrincipal);
+    margin-bottom: 0px;
+}
+
+/* ESTILOS PARA "QUÉ HACEMOS" */
+
+.quehacemos h2{
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: var(--fuentePrincipal);
+    margin-bottom: 40px;
+    text-align: center;
+
+}
+
+/* ESTILOS PARA LAS ESPECIALIDADES 1 (PROD Y REC) */
+
+.especialidadesimagenes1{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.especialidadesimagenes1>div>div{
+    background-color: rgba(0, 0, 0, 0.686);
+    width: 100%;
+    height: 700px;
+}
+.especialidadesimagenes1>div>div:hover{
+    background-color: rgba(0, 0, 0, 0.432);
+    width: 100%;
+    height: 700px;
+}
+.especialidadesimagenes1 .prod{
+    height: 700px;
+    background-image: url(./src/imagen_produccion.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    /* opacity: 0.5; */
+}
+.especialidadesimagenes1 .rec{
+    height: 700px;
+    background-image: url(./src/imagen_microfono.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    /* opacity: 0.5; */
+}
+.especialidadesimagenes1 .mix{
+    height: 700px;
+    background-image: url(./src/imagen_faders.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    /* opacity: 0.5; */
+}
+.especialidadesimagenes1 .mast{
+    height: 700px;
+    background-image: url(./src/imagen_cono.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    /* opacity: 0.5; */
+}
+.especialidadesimagenes1 h3{
+    font-size: 65px;
+    color: white;
+    font-weight: 800;
+    font-family:var(--fuenteSecundaria);
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 80px;
+}
+
+
+
+
+
+
+
+

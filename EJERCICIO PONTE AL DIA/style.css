@@ -95,3 +95,209 @@
     align-items: end;
 }
 
+/* EJERCICIO 1 PARA LAS MEDIAS QUERIES  */
+
+.Ejercicio1media{
+    height: 500px;
+}
+
+@media (max-width:360px){
+    .Ejercicio1media{
+        background-color: green;
+    }
+}
+@media (min-width:360px) and (max-width:616px){
+    .Ejercicio1media{
+        background-color: red;
+    }
+}
+@media (min-width:616px) and (max-width:933px){
+    .Ejercicio1media{
+        background-color: blue;
+    }
+}
+@media (min-width:933px){
+    .Ejercicio1media{
+        background-color: yellow;
+    }
+}
+
+
+.ejercicioAR{
+    height: 500px;
+    background-color:blue;
+    position: relative;
+
+    /* PARA HACER UN DEGRADIENTE DE COLOR SE UTILIZA */
+    background-image: linear-gradient(to right,red 50%, blue 55%);
+
+
+}
+.ejercicioAR div{
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    position: absolute;
+    bottom: 300px;
+    right: 0;
+    box-shadow: 4px 6px 16px 5px rgba(0,0,0,0.75);
+}
+
+/* EJERCICIO GRID */
+
+.ejercicioGrid div{
+    border: 1px solid black;
+}
+
+.ejercicioGrid{
+    display: grid;
+    grid-template-columns:20% 30% 50%;
+    grid-template-rows: 200px 100px;
+}
+
+/* EJERCICIO 2 DE GRID */
+
+.ejercicio2grid div{
+    border: 1px solid black;
+}
+.ejercicio2grid{
+    display: grid;
+    grid-template-columns: 80% 100px;
+    /* grid-template-columns: 1fr 1fr; esto sirve para dividir en fracciones,
+    las cuales funcionan según cuantas ponen dividen el porcentaje*/
+    grid-template-rows: 50px 300px 100px 200px;
+}
+
+/* EJERCICIO 3 DE GRID (FRACCIONES) */
+
+.ejercicioFracciones div{
+    border: 1px solid blue;
+}
+.ejercicioFracciones{
+    display: grid;
+    height: 500px;
+    grid-template-columns: 1fr 3fr 2fr 1.5fr;
+    grid-template-rows: 5fr 15fr 16fr 7fr;
+
+}
+
+
+/* EJERCICIO REPEAT  */
+
+.ejercicioRepeat div{
+    border: 1px solid red;
+}
+.ejercicioRepeat{
+    display: grid;
+    height: 300px;
+    grid: 2fr 2fr/ 1fr 1fr;
+}
+
+/* PARA QUE UN ELEMENTO OCUPE O SE MUEVA 
+A DONDE QUEREMOS EN NUESTRO GRID, SE UTILIZA: */
+
+.ejercicio4grid{
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.ejercicio4grid div{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.caja5{
+    grid-row: 1/3;
+    text-align: center;
+    font-size: 100px;
+    text-transform: uppercase;
+    color: blue;
+}
+.caja1{
+    grid-column: 1/3;
+    grid-row: 3/4;
+    font-size: 100px;
+    text-transform: uppercase;
+    color: blueviolet;
+}
+.caja2{
+    grid-column: 2/4;
+    grid-row:2/3;
+    font-size: 100px;
+    text-transform: uppercase;
+    
+}
+.caja4{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    font-size: 100px;
+    text-transform: uppercase;
+}
+.caja3{
+    grid-column: 3/4;
+    grid-row:1/2;
+    font-size: 100px;
+    text-transform: uppercase;
+}
+.caja6{
+    grid-column: 2/3;
+    grid-row:1/2;
+    font-size: 100px;
+    text-transform: uppercase;
+}
+
+/* SEGUNDO EJERCICIO DE GRID COLUMN Y GRID ROW */
+
+.ejercicio5grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 200px 100px 100px;
+    
+}
+.ejercicio5grid div{
+    border: 1px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.grid1{
+    grid-column: 4/5;
+    grid-row:1/3;
+    background-color: red;
+}
+.grid2{
+    grid-column: 3/4;
+    grid-row:1/2;
+    background-color: violet;
+}
+.grid3{
+    grid-column: 2/5;
+    grid-row:3/5;
+    background-color: blue;
+}
+.grid4{
+    grid-column: 1/2;
+    grid-row: 2/5;
+    background-color: aqua;
+}
+.grid5{
+    grid-column: 1/3;
+    grid-row:1/2;
+    background-color: green;
+}
+
+
+/* COMO ORGANIZAR EL CSS CORRECTAMENTE
+
+IR ESCRIBIENDO DE LOS MAS GENERAL A LO MAS ESPECIFICO
+
+    - PRIMERO EL ROOT
+    - SEGUNDO EL HTML 
+    - TERCERO EL BODY 
+    - H1 H2 H3 
+    - CLASES E IR AGRUPANDO POR SECCIONES, EL HEADER, BANNER,  */

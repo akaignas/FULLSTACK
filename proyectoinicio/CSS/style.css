@@ -4,8 +4,6 @@
     --fuentePrincipal: 'Open Sans', sans-serif;
     --fuenteBotone: 
 }
-
-
 html
     {
     font-size: 62,5%;
@@ -16,9 +14,26 @@ body
     font-size: 16px;
     /* background-color: var(--colorPrincipal) */
     font-family: var(--fuentePrincipal);
-    } 
-    /*ESTO ES PARA CONSEGUIR TRABAJAR SOBRE 10px = 1REM*/
+    /* background-color: red; */
 
+
+    } 
+
+/* MEDIAS QUERIE */
+
+    /* @media (min-width:900px){
+        body{
+            background-color: yellow;
+        }
+    }
+    @media (max-width:700px){
+        body{
+            background-color: blue;
+        }
+
+    } */
+    /*ESTO ES PARA CONSEGUIR TRABAJAR SOBRE 10px = 1REM*/
+    
 
 
 
@@ -26,21 +41,38 @@ body
 
     /* ESTILO GENÉRICOS */
 
-    .contenedor{ 
+    
+    @media (min-width:1140px){
+
+        .contenedor{ 
         max-width: 75%;
         margin-top: 0;
         margin-right: auto;
         margin-bottom: 0;
         margin-left: auto;
-
         margin: 0 auto 0 auto;
-        
         margin: 0 auto;
         /* ESTO SON 3 FORMAS DE PONER MARGENES A TODA LA PÁGINA */
     }
-    
+    }
 
+    @media (max-width:1140px) and (min-width:768) {
+        .contenedor{
+            max-width: 80%;
+            margin: 0 auto;
+        }
+    }
+    
+    @media (max-width:768px){
+
+        .contenedor{
+            max-width: 90%;
+            margin: 0 auto;
+        }
+    }
+    
     /* ESTILOS PARA EL MAIN */
+
     .fondoMain{
         background-image: url(../img/11641893944_banner_zona_centro.png);
         background-size: cover;
@@ -67,6 +99,14 @@ body
         margin-inline-start: 0px;
         margin-inline-end: 0px;
     }
+
+    /* ESTO ES PARA ESCRIBIR DESDE CSS Y NO TE DEJA SELECCIONAR EN LA WEB */
+
+    /* h1::after{
+        content: "texto con pseudoelemento"
+    } */
+
+
     .fondoMain a{
         background-color: black;
         color: white;
@@ -420,6 +460,11 @@ body
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
+    }
+    @media (max-width:1040){
+    .ContactarCuadros{
+        flex-direction: column;
+    }
     }
     .ContactarCuadros div{
         display: flex;
